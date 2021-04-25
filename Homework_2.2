@@ -1,0 +1,87 @@
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("Введите номер месяца");
+            var action = int.Parse(Console.ReadLine());
+            switch (action)
+            {
+                case 1:
+                    Console.WriteLine("Январь 31 день.");
+                    break;
+                    
+                case 2:
+                    Console.WriteLine("Этот год високосный?");
+                    var високосный = (Console.ReadLine());
+                    switch (високосный)
+                    {
+                        case "Да":
+                            Console.WriteLine("Февраль 29 дней.");
+                            break;
+                        case "Нет":
+                            Console.WriteLine("Февраль 28 дней.");
+                            break;
+                        case "да":
+                            Console.WriteLine("Февраль 29 дней.");
+                            break;
+                        case "нет":
+                            Console.WriteLine("Февраль 28 дней.");
+                            break;
+                        default:
+                            Console.WriteLine("Неправильный ответ. Варианты ответа: Да/Нет");
+                            break;
+                    }
+                    break;
+                    
+                case 3:
+                    Console.WriteLine("Март 31 день.");
+                    break;
+                    
+                case 4:
+                    Console.WriteLine("Апрель 30 дней.");
+                    break;
+                    
+                case 5:
+                    Console.WriteLine("Май 31 день.");
+                    break;
+                    
+                case 6:
+                    Console.WriteLine("Июнь 30 дней.");
+                    break;
+                    
+                case 7:
+                    Console.WriteLine("Июль 31 день.");
+                    break;
+                    
+                case 8:
+                    Console.WriteLine("Август 31 день.");
+                    break;
+                    
+                case 9:
+                    Console.WriteLine("Сентябрь 30 дней.");
+                    break;
+                    
+                case 10:
+                    Console.WriteLine("Октябрь 31 день.");
+                    break;
+                    
+                case 11:
+                    Console.WriteLine("Ноябрь 30 дней.");
+                    break;
+                    
+                case 12:
+                    Console.WriteLine("Декабрь 31 день.");
+                    break;
+                    
+                default:
+                    Console.WriteLine("Всего 12 месяцев!");
+                    break;
+            }
+        }
+    }
+}
