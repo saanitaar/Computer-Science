@@ -1,0 +1,30 @@
+using System;
+
+namespace Homework
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter surname: ");
+            string Surname = Console.ReadLine();
+
+            Console.Write("Enter name: ");
+            string Name = Console.ReadLine();
+
+            Console.Write("Enter the year of birth: ");
+            int YearOfBirth = Convert.ToInt32(Console.ReadLine());
+            int CurrentYear = DateTime.Today.Year;
+            int Age = CurrentYear - YearOfBirth;
+
+            {
+                if (Age < 0)
+                    Console.WriteLine("The year of birth was entered incorrectly");
+                else
+
+                    Console.WriteLine($"Hello, {Surname} {Name},your age: {Age} :( ");
+
+            }
+        }
+    }
+}
